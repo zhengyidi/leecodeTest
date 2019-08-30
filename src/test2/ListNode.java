@@ -25,6 +25,9 @@ public class ListNode {
             sb.append(n.val).append(", ");
             n = n.next;
         }
+        if (sb.length() > 0) {
+            sb.delete(sb.length() - 2, sb.length());
+        }
         return sb.toString();
     }
 }

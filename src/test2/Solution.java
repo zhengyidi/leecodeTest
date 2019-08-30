@@ -27,9 +27,10 @@ public class Solution {
             int val1 = l1 != null ? l1.val : 0;
             int val2 = l2 != null ? l2.val : 0;
 
+            // 当前值为 两个节点值以及进位的和
             int curVal = val1 + val2 + carry;
             if (curVal >= 10) {
-                carry = curVal / 10;
+                carry = curVal / 10; // 除以10 获取新的进位
                 curVal = curVal - 10;
             } else {
                 carry = 0;
